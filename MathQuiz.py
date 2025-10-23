@@ -1,5 +1,7 @@
 # Import Tkinter Libraries
-
+import tkinter as tk
+from tkinter import ttk
+import random
 
 # Create Window with title and set size of window.
 
@@ -14,3 +16,4 @@
 
 
 # Create window with elements 
+
