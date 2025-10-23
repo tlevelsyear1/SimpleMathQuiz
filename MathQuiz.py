@@ -1,7 +1,7 @@
 # Import Tkinter Libraries
 
 
-# Create Window with title and set size of window
+# Create Window with title and set size of window.
 
 
 # Create Frames to organise widgets
