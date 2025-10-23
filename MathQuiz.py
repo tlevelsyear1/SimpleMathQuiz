@@ -5,6 +5,9 @@ import random
 
 # Create Window with title and set size of window.
 
+window = tk.Tk()
+window.title('Simple Math Game')
+window.geometry('700x400')  
 
 # Create Frames to organise widgets
 
@@ -17,3 +20,5 @@ import random
 
 # Create window with elements 
 
+
+window.mainloop()
