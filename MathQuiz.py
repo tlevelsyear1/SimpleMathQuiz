@@ -10,7 +10,22 @@ window.title('Simple Math Game')
 window.geometry('700x400')  
 
 # Create Frames to organise widgets
+def Mul():
+    Mode = 'Multiplication'
 
+def Div():
+    Mode = 'Division'
+
+def Add():
+    Mode = 'Addition'
+
+def Sub():
+    Mode = 'Subtraction'
+
+btnm = tk.Button(window, text="Multiplication",width= 15,height= 2, command=Mul)
+btnm.pack()
+btnd = tk.Button(window, text="Division", command=Div)
+btnd.pack()
 
 #Create Widgets and images to use for UI
 
