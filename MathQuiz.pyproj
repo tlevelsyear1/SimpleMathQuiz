@@ -37,6 +37,11 @@
     <Content Include="Images\7.png" />
     <Content Include="Images\8.png" />
     <Content Include="Images\9.png" />
+    <Content Include="Images\divide.png" />
+    <Content Include="Images\equals.png" />
+    <Content Include="Images\minus.png" />
+    <Content Include="Images\multiply.png" />
+    <Content Include="Images\plus.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
