@@ -16,15 +16,40 @@ def Start():
     match Mode:
         case "Mul":
             print("Mul")
-            Mlabel = tk.Label(window, image=(r"+.png"))
-            Mlabel1.image = num1
-            Mlabel1.place(x=225, y=125, width=75, height=75)
+            oper = Image.open(r"C:\Users\ayoub\source\repos\KidsMathGame\Images\multiply.png")
+            oper = oper.resize((75, 75))
+            opertk = ImageTk.PhotoImage(oper)
+
+            Mlabel = tk.Label(window, image=opertk)
+            Mlabel.image = opertk
+            Mlabel.place(x=315, y=125, width=75, height=75)
         case "Div":
-            print("Div")
+             print("Div")
+             oper = Image.open(r"C:\Users\ayoub\source\repos\KidsMathGame\Images\divide.png")
+             oper = oper.resize((75, 75))
+             opertk = ImageTk.PhotoImage(oper)
+
+             Dlabel = tk.Label(window, image=opertk)
+             Dlabel.image = opertk
+             Dlabel.place(x=315, y=125, width=75, height=75)
         case "Add":
             print("Add")
+            oper = Image.open(r"C:\Users\ayoub\source\repos\KidsMathGame\Images\plus.png")
+            oper = oper.resize((75, 75))
+            opertk = ImageTk.PhotoImage(oper)
+
+            Alabel = tk.Label(window, image=opertk)
+            Alabel.image = opertk
+            Alabel.place(x=315, y=125, width=75, height=75)
         case "Sub":
             print("Sub")
+            oper = Image.open(r"C:\Users\ayoub\source\repos\KidsMathGame\Images\minus.png")
+            oper = oper.resize((75, 75))
+            opertk = ImageTk.PhotoImage(oper)
+
+            Alabel = tk.Label(window, image=opertk)
+            Alabel.image = opertk
+            Alabel.place(x=315, y=125, width=75, height=75)
         case "None":
             print("None")
         case _:
