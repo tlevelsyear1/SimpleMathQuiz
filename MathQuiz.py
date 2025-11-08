@@ -93,7 +93,6 @@ def Start():
         case _:
             print("Error")
 
-# Create Frames to organise widgets
 def Mul():
     global Mode
     Mode = 'Mul'
@@ -124,11 +123,22 @@ btna.place(x=30, y=180, width=125, height=50)
 btns = tk.Button(window, text="Subtraction", command=Sub)
 btns.place(x=30, y=260, width=125, height=50)
 
+# Entry widget
+answer = tk.Entry(window)
+answer.place(x=300, y=220, width=100, height=50)
 
-#Pack frames and widgets in order you want on page
+# Function to store input
+def store_input():
+    user_input = answer.get()  # Retrieve text from Entry
+    print(user_input)  # You can now use this variable elsewhere
+
+# Submit button with command
+btnsubmit = tk.Button(window, text="Submit", command=store_input)
+btnsubmit.place(x=410, y=220, width=100, height=50)
 
 
-# Create window with elements 
+   
 
 
+#Run the window loop
 window.mainloop()
