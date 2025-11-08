@@ -11,7 +11,7 @@ window = tk.Tk()
 window.title('Simple Math Game')
 window.geometry('700x400')  
 
-def RandNum():
+def RandQ():
     #Generate Random First Number
     image_paths = [f"Images/{i}.png" for i in range(10)]
 
@@ -36,11 +36,20 @@ def RandNum():
     label2.image = num2
     label2.place(x=400, y=125, width=75, height=75)
 
+    #Equals Sign Image
+    equals = Image.open(r"C:\Users\ayoub\source\repos\KidsMathGame\Images\equals.png")
+    equals = equals.resize((75, 75))
+    equals = ImageTk.PhotoImage(equals)
+    equalLabel = tk.Label(window, image=equals)
+    equalLabel.image = equals
+    equalLabel.place(x=495, y=125, width=75, height=75)
+
+
 #Check What Mode To Run
 def Start():
     match Mode:
         case "Mul":
-            RandNum()
+            RandQ()
             print("Mul")
             oper = Image.open(r"C:\Users\ayoub\source\repos\KidsMathGame\Images\multiply.png")
             oper = oper.resize((75, 75))
@@ -50,7 +59,7 @@ def Start():
             Mlabel.image = opertk
             Mlabel.place(x=315, y=125, width=75, height=75)
         case "Div":
-             RandNum()
+             RandQ()
              print("Div")
              oper = Image.open(r"C:\Users\ayoub\source\repos\KidsMathGame\Images\divide.png")
              oper = oper.resize((75, 75))
@@ -60,7 +69,7 @@ def Start():
              Dlabel.image = opertk
              Dlabel.place(x=315, y=125, width=75, height=75)
         case "Add":
-            RandNum()
+            RandQ()
             print("Add")
             oper = Image.open(r"C:\Users\ayoub\source\repos\KidsMathGame\Images\plus.png")
             oper = oper.resize((75, 75))
@@ -70,7 +79,7 @@ def Start():
             Alabel.image = opertk
             Alabel.place(x=315, y=125, width=75, height=75)
         case "Sub":
-            RandNum()
+            RandQ()
             print("Sub")
             oper = Image.open(r"C:\Users\ayoub\source\repos\KidsMathGame\Images\minus.png")
             oper = oper.resize((75, 75))
